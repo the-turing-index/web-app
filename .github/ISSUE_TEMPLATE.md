@@ -10,11 +10,11 @@ assignees: ''
 
 ### Feature Categories:
 
-- [ ] Express
-- [ ] React
-- [ ] Styling/CSS
-- [ ] Documentation
-- [ ] Other: 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
 
 **Describe the feature/Bug your gonna work on**
 
