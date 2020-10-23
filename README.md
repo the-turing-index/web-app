@@ -162,7 +162,7 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/leighlars/WeatherOrNot.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/the-turing-index/web-app.svg?style=flat-square
 [contributors-url]: https://github.com/the-turing-index/web-app/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/the-turing-index/web-app.svg?style=flat-square
 [forks-url]: https://github.com/the-turing-index/web-app/network/members
@@ -173,5 +173,5 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [license-shield]: https://img.shields.io/github/license/the-turing-index/web-app.svg?style=flat-square
 [license-url]: https://github.com/the-turing-index/web-app/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/josh-sevy
+<!-- [linkedin-url]: https://linkedin.com/in/Add linkdin user name here -->
 [product-screenshot]: images/screenshot.png
