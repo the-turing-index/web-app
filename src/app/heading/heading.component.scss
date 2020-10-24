@@ -1,0 +1,30 @@
+@import '../../styles.scss';
+
+.header {
+
+    height: 20vh;
+    position: inline-block;
+
+    &__logo-box {
+        position: fixed;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo {
+        height: 4rem;
+    }
+    
+    &__text-box {
+        position: fixed;
+        top: 6rem;
+        right: 15%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+.heading-primary {
+    color: $blueprint-white;
+    font-size: 5rem;
+}
