@@ -1,25 +1,9 @@
 @import '../../styles.scss';
 
-
 .header {
-    height: 85vh;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($blueprint-grey, 0.8),
-        rgba($blueprint-white, 0.8)),
-    url(../../assets/img/download.jpeg);
-    background-size: cover;
-    background-position: top;
-    position: relative;
 
-    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-        height: 95vh;
-    }
-    
     &__logo-box {
-        position: absolute;
+        position: fixed;
         top: 4rem;
         left: 4rem;
     }
@@ -29,11 +13,10 @@
     }
     
     &__text-box {
-        position: absolute;
-        top: 40%;
-        left: 50%;
+        position: fixed;
+        top: 5rem;
+        right: 34rem;
         transform: translate(-50%, -50%);
         text-align: center;
     }
 }
-
