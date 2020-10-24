@@ -1,0 +1,15 @@
+@import '../../styles.scss';
+
+.heading {
+    display: grid;
+    height: 20vh;
+    width: 100vw;
+    background-color: $blueprint-grey;
+
+    &-container {
+        color: $blueprint-white;
+        text-align: center;
+        border-bottom: 2px solid $blueprint-white;
+    }
+
+}
