@@ -1,6 +1,4 @@
-// Global Variables
-
-//Colors
-
-$blueprint-grey: #61828fed;
-$blueprint-white: #eee
+@import './sass/abstracts/variables';
+@import './sass/abstracts/mixins';
+@import './sass/components/button';
+@import './sass/layout/header';
