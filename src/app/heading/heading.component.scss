@@ -2,6 +2,9 @@
 
 .header {
 
+    height: 20vh;
+    position: inline-block;
+
     &__logo-box {
         position: fixed;
         top: 4rem;
@@ -9,14 +12,19 @@
     }
 
     &__logo {
-        height: 3.5rem;
+        height: 4rem;
     }
     
     &__text-box {
         position: fixed;
-        top: 5rem;
-        right: 34rem;
+        top: 6rem;
+        right: 15%;
         transform: translate(-50%, -50%);
         text-align: center;
     }
+}
+
+.heading-primary {
+    color: $blueprint-white;
+    font-size: 5rem;
 }
