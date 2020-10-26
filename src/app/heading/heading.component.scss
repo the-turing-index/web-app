@@ -7,8 +7,8 @@
 
     &__logo-box {
         position: fixed;
-        top: 4rem;
-        left: 4rem;
+        top: 5%;
+        left: 5%;
     }
 
     &__logo {
@@ -16,9 +16,9 @@
     }
     
     &__text-box {
-        position: fixed;
-        top: 6rem;
-        right: 15%;
+        position: absolute;
+        top: 10%;
+        right: 20%;
         transform: translate(-50%, -50%);
         text-align: center;
     }
@@ -26,5 +26,5 @@
 
 .heading-primary {
     color: $blueprint-white;
-    font-size: 5rem;
+    font-size: 4rem;
 }
