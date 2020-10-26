@@ -4,15 +4,22 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
 import { HeadingComponent } from './heading/heading.component';
+import { AboutComponent } from './about/about.component';
+import { AppRoutingModule } from './app-routing.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MapComponent,
-    HeadingComponent
+    HeadingComponent,
+    AboutComponent,
+    PageNotFoundComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
