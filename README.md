@@ -46,7 +46,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Remote life can be hard. To help bridge the gap we created a virtual campus for our remote life.
+Just because we are learning remote, this doesn't mean you cannot enjoy the Turing campus experience. Come roam the digital halls of Turing and allow us to help you find your digital class room. Just because we are learning from home doesn't mean we can't experience basement life at Turing.
 
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
