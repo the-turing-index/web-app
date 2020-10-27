@@ -9,7 +9,7 @@ cache:
     - node_modules
 
 addons:
-  chrome: stable
+  chrome: beta
 
 script:
   - npm run lint
