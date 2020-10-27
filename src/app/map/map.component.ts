@@ -3,15 +3,19 @@ import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
 
+import { Get } from './get.model';
+
+
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.scss']
 })
 export class MapComponent implements OnInit {
+  loadedData: Get[] = [];
 
   constructor(private http: HttpClient) {
-    loadedData = [];
+ 
 
    }
 
@@ -19,15 +23,15 @@ export class MapComponent implements OnInit {
     this.fetchData();
   }
 
-  onFetchData() {
+  onFetchData(): void {
     this.fetchData();
   }
 
-  private fetchData() {
+  private fetchData(): void {
     this.http
-      .get('url')
+      .get<{ [key: string]: Get}>('url')
       .pipe(map((responseData: {[key: string]: }) => {
-        const dataArray = [];
+        const dataArray: Get[] = [];
         for (const key in  responseData) {
           if (responseData.hasOwnProperty(key)) {
             dataArray.push({ ...responseData[key] , id: key })
@@ -37,6 +41,8 @@ export class MapComponent implements OnInit {
       }))
       .subscribe(response => {
         console.log(response);
+        this.loadedData = response;
+        console.log(this.loadedData);
     });
   }
 }
