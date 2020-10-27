@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "12.11.1"
+  - "14.1.0"
 dist: trusty
 sudo: false
 
@@ -32,4 +32,6 @@ script:
   - npm run test
   - npm run build
 
+deploy: 
+  skip_cleanup: true
 
