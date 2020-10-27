@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -8,11 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapComponent implements OnInit {
 
-  constructor() {
+  constructor(private http: HttpClient) {
 
    }
 
   ngOnInit(): void {
+  }
+
+  fetchData() {
+    this.http.get('url')
   }
 
 }
