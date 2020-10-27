@@ -20,29 +20,29 @@ export class MapComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.fetchData();
+    // this.fetchData();
   }
 
-  onFetchData(): void {
-    this.fetchData();
-  }
+  // onFetchData(): void {
+  //   this.fetchData();
+  // }
 
-  private fetchData(): void {
-    this.http
-      .get<{ [key: string]: Get}>('url')
-      .pipe(map((responseData: {[key: string]: Get }) => {
-        const dataArray: Get[] = [];
-        for (const key in  responseData) {
-          if (responseData.hasOwnProperty(key)) {
-            dataArray.push({ ...responseData[key] , id: key })
-          }
-        }
-        return dataArray;
-      }))
-      .subscribe(response => {
-        console.log(response);
-        this.loadedData = response;
-        console.log(this.loadedData);
-    });
-  }
+  // private fetchData(): void {
+  //   this.http
+  //     .get<{ [key: string]: Get}>('url')
+  //     .pipe(map((responseData: {[key: string]: Get }) => {
+  //       const dataArray: Get[] = [];
+  //       for (const key in  responseData) {
+  //         if (responseData.hasOwnProperty(key)) {
+  //           dataArray.push({ ...responseData[key] , id: key })
+  //         }
+  //       }
+  //       return dataArray;
+  //     }))
+  //     .subscribe(response => {
+  //       console.log(response);
+  //       this.loadedData = response;
+  //       console.log(this.loadedData);
+  //   });
+  // }
 }
