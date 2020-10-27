@@ -1,13 +1,18 @@
 language: node_js
 node_js:
-  - "7"
+  - "8"
+dist: trusty
+sudo: false
 
-branches:
-  only:
-  - main
+cache:
+  directories:
+    - node_modules
 
-script: 
-  - ng test --watch false -cc
-  - npm run e2e
-  - ng build -bh "https://github.com/the-turing-index/web-app"
+addons:
+  chrome: stable
 
+script:
+  - npm run lint
+  - npm run test:headless
+  - npm run build
+  - xvfb-run npm run e2e
