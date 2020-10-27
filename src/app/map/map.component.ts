@@ -30,7 +30,7 @@ export class MapComponent implements OnInit {
   private fetchData(): void {
     this.http
       .get<{ [key: string]: Get}>('url')
-      .pipe(map((responseData: {[key: string]: }) => {
+      .pipe(map((responseData: {[key: string]: Get }) => {
         const dataArray: Get[] = [];
         for (const key in  responseData) {
           if (responseData.hasOwnProperty(key)) {
