@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "7"
+
+branches:
+  only:
+  - main
+
+script: 
+  - ng test --watch false -cc
+  - npm run e2e
+  - ng build -bh "https://github.com/the-turing-index/web-app"
+

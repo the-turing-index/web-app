@@ -2,12 +2,12 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+<!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 <br />
 <p align="center">
   <a href="">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="./src/assets/img/turingLogo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">https://github.com/the-turing-index/web-app</h3>
@@ -34,8 +34,6 @@
   * [Installation](#installation)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
@@ -46,7 +44,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Just because we are learning remote, this doesn't mean you cannot enjoy the Turing campus experience. Come roam the digital halls of Turing and allow us to help you find your digital class room. Just because we are learning from home doesn't mean we can't experience basement life at Turing.
+Just because we are learning remote, this doesn't mean you cannot enjoy the Turing campus experience. Come roam the digital halls of Turing and allow us to help you find your digital class room. Just because we are learning from home doesn't mean we can't experience basement life at Turing. As our final project we wanted to bring the Turing experience to future cohorts to enjoy, living the basement life.
 
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
@@ -59,9 +57,11 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 
 ### Built With
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+
+* [Angular](https://angular.io/)
+* [Sass](https://sass-lang.com/)
+* [Travis CI](https://travis-ci.org/)
+* [TypeScript](https://www.typescriptlang.org/)
 
 
 
@@ -81,19 +81,21 @@ npm install npm@latest -g
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+
+1. Clone the repo
 ```sh
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/the-turing-index/web-app.git
 ```
 3. Install NPM packages
 ```sh
 npm install
 ```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
-```
+4. Run:
+ ```sh
+ ng serve --open
+ ```
+
+
 
 
 
@@ -112,52 +114,30 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 See the [open issues](https://github.com/the-turing-index/web-app/issues) for a list of proposed features (and known issues).
 
 
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Nicole Latifi - email@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+AJ Tran -  email@example.com
 
+Linus Leas - email@example.com
+
+Ashkan Abbasi - email@example.com
+
+Joshua Sevy - email@example.com
+
+Michael Evans -  email@example.com
+
+
+Project Link: [Heroku Deployed App](https://github.com/your_username/repo_name)
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
-
-
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -172,6 +152,4 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [issues-url]: https://github.com/the-turing-index/web-app/issues
 [license-shield]: https://img.shields.io/github/license/the-turing-index/web-app.svg?style=flat-square
 [license-url]: https://github.com/the-turing-index/web-app/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-<!-- [linkedin-url]: https://linkedin.com/in/Add linkdin user name here -->
 [product-screenshot]: images/screenshot.png
