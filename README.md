@@ -42,7 +42,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![First Draft Map](./src/assets/docImages/roughMap.png)
+
+
+![FirstNav](./src/assets/docImages/firstNav.png)
+
 
 Just because we are learning remote, this doesn't mean you cannot enjoy the Turing campus experience. Come roam the digital halls of Turing and allow us to help you find your digital class room. Just because we are learning from home doesn't mean we can't experience basement life at Turing. As our final project we wanted to bring the Turing experience to future cohorts to enjoy, living the basement life.
 
