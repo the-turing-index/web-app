@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+// import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
 
@@ -12,15 +12,15 @@ import { Get } from './get.model';
   styleUrls: ['./map.component.scss']
 })
 export class MapComponent implements OnInit {
-  loadedData: Get[] = [];
+  loadedData = [];
 
-  constructor(private http: HttpClient) {
+  constructor() {
  
 
    }
 
   ngOnInit(): void {
-    // this.fetchData();
+      // this.fetchData();
   }
 
   // onFetchData(): void {
@@ -29,18 +29,17 @@ export class MapComponent implements OnInit {
 
   // private fetchData(): void {
   //   this.http
-  //     .get<{ [key: string]: Get}>('url')
-  //     .pipe(map((responseData: {[key: string]: Get }) => {
-  //       const dataArray: Get[] = [];
+  //     .get('https://jsonplaceholder.typicode.com/todos/2')
+  //     .pipe(map((responseData) => {
+  //       const dataArray = [];
   //       for (const key in  responseData) {
   //         if (responseData.hasOwnProperty(key)) {
-  //           dataArray.push({ ...responseData[key] , id: key })
+  //           dataArray.push(responseData);
   //         }
   //       }
   //       return dataArray;
   //     }))
   //     .subscribe(response => {
-  //       console.log(response);
   //       this.loadedData = response;
   //       console.log(this.loadedData);
   //   });
