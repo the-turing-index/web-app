@@ -20,7 +20,10 @@ before_script:
 
 script:
   - npm run lint
-  - npm run test
+  - ng test --watch false -cc
   - npm run build
+  - xvfb-run npm run e2e
+
+
 
 
