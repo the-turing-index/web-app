@@ -3,23 +3,17 @@ node_js:
   - "14.1.0"
 dist: trusty
 
+os: osx
 
 cache:
   directories:
     - node_modules
 
 addons:
-apt:
-  sources:
-    - google-chrome
-  packages:
-    - google-chrome-stable
-    - google-chrome-beta
-
-
+  chrome: beta
 
 before_script:
-- npm install -g angular-cli
+- npm install -g @angular/cli
 - npm install -g karma
 - npm install
 - ng build
