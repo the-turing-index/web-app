@@ -15,8 +15,6 @@ export class MapComponent implements OnInit {
   loadedData = [];
 
   constructor() {
- 
-
    }
 
   ngOnInit(): void {
