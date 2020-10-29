@@ -7,12 +7,14 @@ export interface ModalClassroom {
 //  * @title Injecting data when opening a dialog
 //  */
 @Component({
-  selector: 'modal-classroom.component',
-  templateUrl: 'modal-classroom.component.html',
+  selector: 'modal-classroom',
+  templateUrl: './modal-classroom.component.html',
+  styleUrls: ['./modal-classroom.component.scss']
 })
 export class ModalClassroomComponent {
   constructor(public dialog: MatDialog) { }
   openDialog() {
+    console.log('derp')
     this.dialog.open(ModalClassroomDialogComponent, {
       data: {
         animal: 'panda'
@@ -21,7 +23,7 @@ export class ModalClassroomComponent {
   }
 }
 @Component({
-  selector: 'modal-classroom-dialog.component',
+  selector: 'modal-classroom-dialog',
   templateUrl: 'modal-classroom-dialog.component.html',
 })
 export class ModalClassroomDialogComponent {
