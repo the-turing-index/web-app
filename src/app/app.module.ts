@@ -8,6 +8,8 @@ import { HeadingComponent } from './heading/heading.component';
 import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalClassroomComponent } from './modal-classroom/modal-classroom.component';
 
 
 @NgModule({
@@ -16,12 +18,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     MapComponent,
     HeadingComponent,
     AboutComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ModalClassroomComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
