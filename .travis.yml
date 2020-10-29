@@ -1,0 +1,28 @@
+language: node_js
+node_js:
+  - "14.1.0"
+dist: trusty
+
+os: osx
+
+cache:
+  directories:
+    - node_modules
+
+addons:
+  chrome: beta
+
+before_script:
+- npm install -g @angular/cli
+- npm install -g karma
+- npm install
+- ng build
+
+script:
+  - npm run lint
+  - ng test --watch false -cc
+  - npm run build
+
+
+
+

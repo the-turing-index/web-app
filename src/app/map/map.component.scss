@@ -1,3 +1,5 @@
+@import '../../styles.scss';
+
 .st0{fill:none;stroke:#eee;stroke-width:4;stroke-miterlimit:5;}
 .st1{fill:none;stroke:#eee;stroke-miterlimit:10;}
 .st2{fill:#FFFFFF;stroke:#eee;stroke-width:3;stroke-miterlimit:10;}
@@ -8,4 +10,9 @@
 .st7{font-size:15px;}
 .st8{font-size:24px;}
 .st9{display:none;}
+
+
+.map {
+    margin-top: 20vh;
+}
 

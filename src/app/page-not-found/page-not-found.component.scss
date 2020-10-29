@@ -1,0 +1,28 @@
+@import '../../styles.scss';
+
+.error {
+    margin-top: 30vh;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: $blueprint-white;
+}
+
+.error-title {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.error-message {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.link-home {
+    margin-top: 75px;
+    height: 20%;
+    align-self: center;
+
+}
+
