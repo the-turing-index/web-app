@@ -8,22 +8,31 @@ import { HeadingComponent } from './heading/heading.component';
 import { AboutComponent } from './about/about.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalClassroomComponent } from './modal-classroom/modal-classroom.component';
+import { MaterialModule } from '../material.module';
+import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
+import { MAT_DIALOG_DEFAULT_OPTIONS, MatDialogConfig } from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
     MapComponent,
     HeadingComponent,
     AboutComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ModalClassroomComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
-  providers: [],
+  providers: [
+    { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
+    { provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: { hasBackdrop: true } }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
