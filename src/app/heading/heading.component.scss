@@ -1,7 +1,6 @@
 @import '../../styles.scss';
 
 .header {
-
     height: 20vh;
     position: inline-block;
 
@@ -16,12 +15,7 @@
     }
     
     &__text-box {
-        // position: absolute;
-        // top: 10%;
-        // right: 20%;
-        // transform: translate(-50%, -50%);
         text-align: center;
-        
     }
 }
 
