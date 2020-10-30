@@ -1,18 +1,50 @@
 @import '../../styles.scss';
 
-.st0{fill:none;stroke:#eee;stroke-width:4;stroke-miterlimit:5;}
-.st1{fill:none;stroke:#eee;stroke-miterlimit:10;}
-.st2{fill:#FFFFFF;stroke:#eee;stroke-width:3;stroke-miterlimit:10;}
-.st3{fill:none;}
-.st4{fill:#FFFFFF;stroke:#eee;stroke-miterlimit:10;}
-.st5{font-family:'MyriadPro-Regular';}
-.st6{font-size:12px;}
-.st7{font-size:15px;}
-.st8{font-size:24px;}
-.st9{display:none;}
 
-
-.map {
-    margin-top: 20vh;
+.st0 {
+    fill:none;
 }
 
+.st1 {
+    font-family:'MyriadPro-Regular';
+}
+
+.st2 {
+    font-size: 21px;
+    fill: $blueprint-white;
+    stroke: $blueprint-draft;
+}
+
+.st3 {
+    font-size: 37px;
+    fill: $blueprint-white;
+    stroke: $blueprint-draft;
+}
+
+.st4 {
+    fill: none;
+    stroke: $blueprint-draft;
+    stroke-width: 0.25;
+    stroke-miterlimit: 10;
+}
+
+.st5 {
+    fill: none;
+    stroke: $blueprint-white;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+
+.st6 {
+    fill: none;
+    stroke: $blueprint-white;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+}
+
+.st7 {
+    fill: none;
+    stroke: $blueprint-white;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+}
