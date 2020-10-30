@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ModalClassroomDialogComponent } from '../modal-classroom/modal-classroom.component'
 // import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
@@ -14,11 +16,18 @@ import { Get } from './get.model';
 export class MapComponent implements OnInit {
   loadedData = [];
 
-  constructor() {
+  constructor(public dialog: MatDialog) {
    }
 
   ngOnInit(): void {
       // this.fetchData();
+  }
+
+  openDialog(): void {
+    console.log('lksjdoweifaejif;laek')
+    this.dialog.open(ModalClassroomDialogComponent, {
+      
+    });
   }
 
   // onFetchData(): void {
