@@ -21,6 +21,10 @@ export class MapComponent implements OnInit {
       // this.fetchData();
   }
 
+  onClicky(): void {
+    console.log('hello');
+  }
+
   // onFetchData(): void {
   //   this.fetchData();
   // }
