@@ -23,11 +23,7 @@ export class ModalClassroomComponent {
   templateUrl: 'modal-classroom-dialog.component.html',
 })
 export class ModalClassroomDialogComponent {
-  dataStuff = this.data.allData[0].mod1.frontend.zoom_link
+  dataStuff = this.data.allData[0].mod1.frontend.zoom_link;
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: ModalClassroom) { }
-
-  ngOnInit(): void {
-    console.log(this.data.allData[0].mod1.frontend.zoom_link)
-  }
 }

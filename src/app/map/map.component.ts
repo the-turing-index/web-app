@@ -1,12 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ModalClassroomDialogComponent } from '../modal-classroom/modal-classroom.component'
-import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
-
-
-import { Get } from './get.model';
-
+import { ModalClassroomDialogComponent } from '../modal-classroom/modal-classroom.component';
 
 @Component({
   selector: 'app-map',
@@ -16,7 +10,7 @@ import { Get } from './get.model';
 export class MapComponent implements OnInit {
   loadedData = {};
 
-  constructor(public dialog: MatDialog, private http: HttpClient) {
+  constructor(public dialog: MatDialog) {
 
    }
 
