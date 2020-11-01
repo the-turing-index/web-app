@@ -9,8 +9,8 @@
 
     &__logo-box {
         position: fixed;
-        top: 5%;
-        left: 5%;
+        top: 2vh;
+        left: 2vw;
     }
 
     &__logo {
@@ -23,14 +23,19 @@
 
     &__button-box {
         position: fixed;
-        right: 5%;
-        top: 7vh;
+        right: 0vw;
+        top: 6.5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 20%;
+        height: 3vh;
     }
 }
 
 .heading-primary {
     position: relative;
-    top: 4vh;
+    top: 2vh;
     color: $blueprint-grey;
     font-size: 3rem;
     align-self: center;
