@@ -1,7 +1,10 @@
 @import '../../styles.scss';
 
 .header {
-    height: 20vh;
+    padding: 0;
+    margin: 0 0 2vh 0;
+    background-color: $blueprint-white;
+    height: 10vh;
     position: inline-block;
 
     &__logo-box {
@@ -17,10 +20,18 @@
     &__text-box {
         text-align: center;
     }
+
+    &__button-box {
+        position: fixed;
+        right: 5%;
+        top: 7vh;
+    }
 }
 
 .heading-primary {
-    color: $blueprint-white;
-    font-size: 4rem;
+    position: relative;
+    top: 4vh;
+    color: $blueprint-grey;
+    font-size: 3rem;
     align-self: center;
 }
