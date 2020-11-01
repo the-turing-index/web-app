@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-// import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
-
-
-import { Get } from './get.model';
-
+import { MatDialog } from '@angular/material/dialog';
+import { ModalClassroomDialogComponent } from '../modal-classroom/modal-classroom.component';
 
 @Component({
   selector: 'app-map',
@@ -12,38 +8,36 @@ import { Get } from './get.model';
   styleUrls: ['./map.component.scss']
 })
 export class MapComponent implements OnInit {
-  loadedData = [];
+  loadedData = {};
 
-  constructor() {
+  constructor(public dialog: MatDialog) {
+
    }
 
   ngOnInit(): void {
-      // this.fetchData();
+    this.fetchData();
   }
 
-  onClicky(): void {
-    console.log('hello');
+  openDialog(): void {
+    this.dialog.open(ModalClassroomDialogComponent, {
+      data: {
+        allData: this.loadedData
+      }
+    });
   }
 
-  // onFetchData(): void {
-  //   this.fetchData();
-  // }
+  onFetchData(): void {
+    this.fetchData();
+  }
 
-  // private fetchData(): void {
-  //   this.http
-  //     .get('https://jsonplaceholder.typicode.com/todos/2')
-  //     .pipe(map((responseData) => {
-  //       const dataArray = [];
-  //       for (const key in  responseData) {
-  //         if (responseData.hasOwnProperty(key)) {
-  //           dataArray.push(responseData);
-  //         }
-  //       }
-  //       return dataArray;
-  //     }))
-  //     .subscribe(response => {
-  //       this.loadedData = response;
-  //       console.log(this.loadedData);
-  //   });
-  // }
+  private fetchData(): void {
+    fetch('http://localhost:8000/calendars')
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      this.loadedData = data.data.attributes;
+      console.log(this.loadedData);
+    });
+  }
 }
