@@ -1,3 +1,19 @@
 @import '../styles.scss';
 
 
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 5vh;
+  width: 100vw;
+  background-color: $blueprint-white;
+  
+
+  &--tag {
+    color: $blueprint-grey;
+    position: absolute;
+    right: 1vw;
+    bottom: 1vh;
+  }
+}
+

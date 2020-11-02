@@ -5,10 +5,11 @@
     margin: 0 0 2vh 0;
     background-color: $blueprint-white;
     height: 10vh;
+    width: 100vw;
     position: inline-block;
 
     &__logo-box {
-        position: fixed;
+        position: absolute;
         top: 2vh;
         left: 2vw;
     }
@@ -22,7 +23,7 @@
     }
 
     &__button-box {
-        position: fixed;
+        position: absolute;
         right: 0vw;
         top: 6.5vh;
         display: flex;
