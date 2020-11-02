@@ -15,7 +15,7 @@ export class MapComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.fetchData();
+    this.onFetchData()
   }
 
   openDialog(): void {

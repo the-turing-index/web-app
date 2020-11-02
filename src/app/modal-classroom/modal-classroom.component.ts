@@ -21,6 +21,7 @@ export class ModalClassroomComponent {
 @Component({
   selector: 'app-modal-classroom-dialog',
   templateUrl: 'modal-classroom-dialog.component.html',
+  styleUrls: ['./modal-classroom.component.scss']
 })
 export class ModalClassroomDialogComponent {
   dataStuff = this.data.allData[0].mod1.frontend.zoom_link;

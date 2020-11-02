@@ -1,8 +1,8 @@
 @import '../styles.scss';
 
 .footer {
-  position: relative;
-  bottom: 0;
+  position: absolute;
+  top: 100vh;
   height: 5vh;
   width: 100vw;
   background-color: $blueprint-white;
@@ -11,7 +11,7 @@
     color: $blueprint-grey;
     position: absolute;
     right: 1vw;
-    bottom: 1vh;
+    bottom: 2vh;
   }
 }
 
