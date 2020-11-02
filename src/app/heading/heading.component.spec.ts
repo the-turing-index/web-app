@@ -1,3 +1,4 @@
+import { not } from '@angular/compiler/src/output/output_ast';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeadingComponent } from './heading.component';
@@ -21,5 +22,15 @@ describe('HeadingComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should display application title', () => {
+    expect(component.title).toBe('Turing Index');
+    expect(component.title).not.toBe(undefined);
+  });
+
+  it('should display application logo', () => {
+    expect(component.logo).toBe("../../assets/img/turingLogo.png");
+    expect(component.logo).not.toBe(undefined);
   });
 });
