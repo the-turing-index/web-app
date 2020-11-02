@@ -30,7 +30,7 @@ describe('HeadingComponent', () => {
   });
 
   it('should display application logo', () => {
-    expect(component.logo).toBe("../../assets/img/turingLogo.png");
+    expect(component.logo).toBe('../../assets/img/turingLogo.png');
     expect(component.logo).not.toBe(undefined);
   });
 });

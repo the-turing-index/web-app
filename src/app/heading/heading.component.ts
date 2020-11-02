@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./heading.component.scss']
 })
 export class HeadingComponent implements OnInit {
-  title: string = "Turing Index";
-  logo: string = "../../assets/img/turingLogo.png";
+  title: string = 'Turing Index';
+  logo: string = '../../assets/img/turingLogo.png';
   constructor() { }
 
   ngOnInit(): void {
