@@ -1,26 +1,15 @@
 <header class="header">
     <div class="header__logo-box">
-        <img src="../../assets/img/turingLogo.png" alt="Logo" class="header__logo">
+        <img src={{logo}} alt="Logo" class="header__logo">
     </div>
     <div class="header__text-box">
-        <h1 class="heading-primary">Turing Index</h1>
+        <h1 class="heading-primary">{{title}}</h1>
+    </div>
+    <div class="header__button-box">
+        <button class="btn btn--grey">home</button>
+        <button class="btn btn--grey">links</button>
+        <button class="btn btn--grey">about</button>
     </div>
 </header>
-<div class="navigation">
-    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-    <label for="navi-toggle" class="navigation__button">
-        <span class="navigation__icon">&nbsp;</span>
-    </label>
-    <div class="navigation__background">&nbsp;</div>
-    <nav class="navigation__nav">
-        <ul class="navigation__list">
-            <!-- <li class="navigation__item"><a routerLink="/map" class="navigation__link"><span>01</span>Basement</a></li>
-            <li class="navigation__item"><a routerLink="https://rickrolled.com/" class="navigation__link"><span>02</span>Community</a></li>
-            <li class="navigation__item"><a routerLink="/about" class="navigation__link"><span>03</span>About</a></li>
-            <li class="navigation__item"><a routerLink="#" class="navigation__link"><span>04</span>placeholder</a></li>
-            <li class="navigation__item"><a routerLink="#" class="navigation__link"><span>05</span>placeholder</a></li> -->
-        </ul>
-    </nav>
-    <router-outlet></router-outlet>
-</div>
+
 
