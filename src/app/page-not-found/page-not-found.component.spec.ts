@@ -24,18 +24,17 @@ describe('PageNotFoundComponent', () => {
   });
 
   it('should display error message heading', () => {
-    let compiled = fixture.debugElement.nativeElement;
-    
+    const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toBe('Sorry');
   });
 
   it('should display error paragraph', () => {
-    let compiled = fixture.debugElement.nativeElement;
+    const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('p').textContent).toBe('There was an issue');
   });
 
   it('should display home button', () => {
-    let compiled = fixture.debugElement.nativeElement;
+    const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('a').textContent).toBe('HOME');
   });
 });

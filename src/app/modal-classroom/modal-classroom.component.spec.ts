@@ -3,18 +3,15 @@ import { MatDialogModule, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 import { ModalClassroom, ModalClassroomComponent } from './modal-classroom.component';
 
-describe('Modal Classroom Component', () => {
-    
+describe ('Modal Classroom Component', () => {
   const data: ModalClassroom = {
     allData: {
       test: 'test',
       link: 'zoom-link'
     }
   };
-    
   let component: ModalClassroomComponent;
   let fixture: ComponentFixture<ModalClassroomComponent>;
-    
   beforeEach((async () => {
     TestBed.configureTestingModule({
       declarations: [
@@ -30,33 +27,30 @@ describe('Modal Classroom Component', () => {
         }
       ]
     })
-      .compileComponents();       
+    .compileComponents();
   }));
-     
   beforeEach(() => {
     fixture = TestBed.createComponent(ModalClassroomComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-    
+
   it('should be created', (async () => {
     expect(component).toBeTruthy();
   }));
 
   it('should NOT display the modal', () => {
-    let compiled = fixture.debugElement.nativeElement;
+    const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('div')).toBeNull();
 
-    fixture.detectChanges()
+    fixture.detectChanges();
 
     expect(compiled.querySelector('button').textContent).toBe('Open dialog');
-  })
+  });
 
   it('should display the modal on click', () => {
-    let compiled = fixture.debugElement.nativeElement;
-   
-    fixture.detectChanges()
-
+    const compiled = fixture.debugElement.nativeElement;
+    fixture.detectChanges();
     expect(compiled.querySelector('button').textContent).toBe('Open dialog');
-  })
+  });
 });
