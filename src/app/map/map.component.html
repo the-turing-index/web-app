@@ -1,4 +1,22 @@
 
+<div class="map-container">
+	<div class="button-container fe1">
+		<div class="button-box">
+			<a class='btn btn--white' style=" background-color: #caf0f8; font-size: 15px;" (click)="this.openDialog()">Mod 1
+				FrontEnd</a>
+			<span style="--i:1;"></span>
+			<span style="--i:2;"></span>
+			<span style="--i:3;"></span>
+			<span style="--i:4;"></span>
+			<span style="--i:5;"></span>
+			<span style="--i:6;"></span>
+			<span style="--i:7;"></span>
+			<span style="--i:8;"></span>
+			<span style="--i:9;"></span>
+			<span style="--i:10;"></span>
+		</div>
+	</div>
+	
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1098.4 702" style="enable-background:new 0 0 1098.4 702;" xml:space="preserve">
 
@@ -6,17 +24,16 @@
 	<rect x="33" y="90.5" class="st0" width="154.4" height="17.4"/>
 	
 	<text transform="matrix(1 0 0 1 39.7101 105.4595)" class="st1 st2">
-
+		<a mat-button style="color:coral" class='map-btn' (click)="this.openDialog()">Mod 1 FrontEnd</a>
 		</text>
-	<a mat-button style="color:coral" class='map-btn' (click)="this.openDialog()">Mod 1 FrontEnd</a>
-	
+<!-- 	
 	<defs>
 		<g class="segment" transform="rotate(72)">
 			<path class="segment-fill" d="M0,0 v-200 a40,40 0 0,0 -62,10 z" />
 			<path class="segment-edge" d="M0,-200 a40,40 0 0,0 -62,10" />
 		</g>
 	</defs>
-	
+	 -->
 	<rect x="274.3" y="90.5" class="st0" width="154.4" height="17.4"/>
 	<text transform="matrix(1 0 0 1 284.2353 105.4595)" class="st1 st2"><a (click)="this.openDialog()">Mod 1 BackEnd</a></text>
 	<rect x="488.5" y="90.5" class="st0" width="154.4" height="17.4"/>
@@ -154,9 +171,10 @@
 	<rect y="0" class="st7" width="1098.4" height="702"/>
 </g>
 </svg>
+</div>
 
-<a mat-button style="color:coral" class='map-btn' (click)="this.openDialog()">Mod 1 FrontEnd</a>
 
-		<app-button>
-			<a style="color:coral" class='map-btn' (click)="this.openDialog()">Mod 1 FrontEnd</a>
-		</app-button>
+<app-button>
+	<a style="color:coral" class='map-btn' (click)="this.openDialog()">Mod 1 FrontEnd</a>
+</app-button>
+
