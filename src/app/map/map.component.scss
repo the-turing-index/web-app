@@ -18,6 +18,13 @@ svg {
 
 .btn {
     z-index: 100;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    background-color: #caf0f8; 
+    font-size: 12px;
+    padding: 15px 0px;
+    font-weight: bolder;
 }
 
 .button-container {
@@ -45,24 +52,42 @@ svg {
     border: 2px solid #ee6c4d;
     
     border-radius: 10%;
-    animation: animate 2s linear infinite;
+    animation: animate 4s linear infinite;
     animation-delay: calc(-0.5s * var(--i));
 }
 
-@keyframes animate
-{
-    0% {
-        width: 150px;
-        height: 35px;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        width: 180px;
-        height: 80px;
-        opacity: 0;
-    }
+// @keyframes animate
+// {
+//     0% {
+//         width: 150px;
+//         height: 35px;
+//     }
+//     50% {
+//         opacity: 1;
+//     }
+//     100% {
+//         width: 180px;
+//         height: 80px;
+//         opacity: 0;
+//     }
+// }
+@keyframes animate {
+  0% {
+      height: 5px;
+      width: 60px;
+    box-shadow: 0 0 0 0rem rgba(rgb(250, 82, 10), 0.2),
+                0 0 0 .5rem rgba(rgb(250, 82, 10), 0.2),
+                0 0 0 1rem rgba(rgb(250, 82, 10), 0.2),
+                0 0 0 2.5rem rgba(rgb(250, 82, 10), 0.2);
+  }
+  100% {
+      height: 10px;
+      width: 100px;
+    box-shadow: 0 0 0 .5rem rgba(rgb(250, 82, 10), 0.2),
+                0 0 0 1rem rgba(rgb(250, 82, 10), 0.2),
+                0 0 0 2.5rem rgba(rgb(250, 82, 10), 0.2),
+                0 0 0 4rem rgba(rgb(250, 82, 10), 0);
+  }
 }
 
 .fe1 {
