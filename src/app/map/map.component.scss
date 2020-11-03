@@ -3,6 +3,39 @@ svg {
     margin: 4vh 2vw;
 }
 
+.map-btn {
+    color: coral;
+}
+
+.segment {
+    fill: black;
+}
+.segment-fill {
+  fill: black;
+  stroke: blue;
+  stroke-width: yellow;
+  font-size: 120px;
+    
+}
+
+
+.segment-fill:hover {
+  fill: black;
+//   stroke: var(--segment-fill-stroke-hover);
+}
+
+.segment-edge {
+  fill: black;
+//   stroke: var(--segment-edge-stroke);
+//   stroke-width: var(--segment-edge-stroke-width);
+}
+
+.segment-edge:hover {
+    // stroke: var(--segment-edge-stroke-hover);
+    
+}
+// ------------------
+
 .st0 {
     fill:none;
 }

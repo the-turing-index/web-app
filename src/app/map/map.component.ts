@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalClassroomDialogComponent } from '../modal-classroom/modal-classroom.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-map',
@@ -40,4 +41,14 @@ export class MapComponent implements OnInit {
       console.log(this.loadedData);
     });
   }
+}
+
+@Component({
+  selector: 'app-button',
+  templateUrl: './map.component.html',
+  styleUrls: ['./map.component.scss'],
+  styles: ['a { color: red; }']
+})
+export class ModClassButton {
+
 }
