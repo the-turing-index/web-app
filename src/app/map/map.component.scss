@@ -26,6 +26,8 @@ svg {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 .button-container .button-box {
@@ -42,7 +44,7 @@ svg {
     box-sizing: border-box;
     border: 2px solid orange;
     border-radius: 10%;
-    animation: animate 4s linear infinite;
+    animation: animate 2s linear infinite;
     animation-delay: calc(-0.5s * var(--i));
 }
 
@@ -56,15 +58,50 @@ svg {
         opacity: 1;
     }
     100% {
-        width: 300px;
-        height: 100px;
+        width: 180px;
+        height: 80px;
         opacity: 0;
     }
 }
 
 .fe1 {
-        bottom: 20px;
-    left: 25px;
+    right: 365px;
+    bottom: 200px;
+}
+
+.be1 {
+    right: 167px;
+    bottom: 200px;
+}
+
+.fe2 {
+    left: 15px;
+    bottom: 200px;
+}
+
+.be2 {
+    left: 196px;
+    bottom: 200px;
+}
+
+.fe3 {
+    right: 365px;
+    top: 235px; 
+}
+
+.be3 {
+    right: 115px;
+    top: 235px; 
+}
+
+.mod4 {
+    left: 382px;
+    bottom: 200px;
+}
+
+.comm {
+    left: 145px;
+    top: 235px; 
 }
 
 .map-btn {
