@@ -43,12 +43,12 @@ export class MapComponent implements OnInit {
   }
 }
 
-@Component({
-  selector: 'app-button',
-  templateUrl: './map.component.html',
-  styleUrls: ['./map.component.scss'],
-  styles: ['a { color: red; }']
-})
-export class ModClassButton {
+// @Component({
+//   selector: 'app-button',
+//   templateUrl: './map.component.html',
+//   styleUrls: ['./map.component.scss'],
+//   styles: ['a { color: red; }']
+// })
+// export class ModClassButton {
 
-}
+// }
