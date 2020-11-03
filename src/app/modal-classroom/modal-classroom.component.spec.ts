@@ -1,10 +1,7 @@
-
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatDialogModule, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 import { ModalClassroom, ModalClassroomComponent } from './modal-classroom.component';
-
-
 
 describe('Modal Classroom Component', () => {
     
@@ -33,8 +30,7 @@ describe('Modal Classroom Component', () => {
         }
       ]
     })
-      .compileComponents();
-            
+      .compileComponents();       
   }));
      
   beforeEach(() => {
@@ -63,5 +59,4 @@ describe('Modal Classroom Component', () => {
 
     expect(compiled.querySelector('button').textContent).toBe('Open dialog');
   })
-
 });

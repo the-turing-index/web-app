@@ -25,7 +25,7 @@ describe('PageNotFoundComponent', () => {
 
   it('should display error message heading', () => {
     let compiled = fixture.debugElement.nativeElement;
-    console.log(compiled);
+    
     expect(compiled.querySelector('h1').textContent).toBe('Sorry');
   });
 
