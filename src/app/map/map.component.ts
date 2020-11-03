@@ -11,7 +11,6 @@ export class MapComponent implements OnInit {
   loadedData = {};
 
   constructor(public dialog: MatDialog) {
-
    }
 
   ngOnInit(): void {
