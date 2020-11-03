@@ -29,7 +29,6 @@ import { MAT_DIALOG_DEFAULT_OPTIONS, MatDialogModule, MatDialog } from '@angular
     BrowserAnimationsModule,
     MaterialModule,
     MatDialogModule,
-    MatDialog
   ],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
