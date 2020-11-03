@@ -1,7 +1,101 @@
 @import '../../styles.scss';
-svg {
-    margin: 4vh 2vw;
+
+.map-container {
+    margin-top: 60px;
+    align-content: center;
+    width: 100vw;
 }
+
+
+
+svg {
+    display: block;
+    margin: auto;
+    max-width: 950px;
+    min-width: 950px;
+
+}
+
+.btn {
+    z-index: 100;
+}
+
+.button-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button-container .button-box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.button-container .button-box span {
+    position: absolute;
+    box-sizing: border-box;
+    border: 2px solid orange;
+    border-radius: 10%;
+    animation: animate 4s linear infinite;
+    animation-delay: calc(-0.5s * var(--i));
+}
+
+@keyframes animate
+{
+    0% {
+        width: 150px;
+        height: 35px;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        width: 300px;
+        height: 100px;
+        opacity: 0;
+    }
+}
+
+.fe1 {
+        bottom: 20px;
+    left: 25px;
+}
+
+.map-btn {
+    color: coral;
+}
+
+.segment {
+    fill: black;
+}
+.segment-fill {
+  fill: black;
+  stroke: blue;
+  stroke-width: yellow;
+  font-size: 120px;
+    
+}
+
+
+.segment-fill:hover {
+  fill: black;
+//   stroke: var(--segment-fill-stroke-hover);
+}
+
+.segment-edge {
+  fill: black;
+//   stroke: var(--segment-edge-stroke);
+//   stroke-width: var(--segment-edge-stroke-width);
+}
+
+
+// ------------------
 
 .st0 {
     fill:none;
