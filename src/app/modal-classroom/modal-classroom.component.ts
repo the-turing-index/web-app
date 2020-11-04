@@ -24,7 +24,7 @@ export class ModalClassroomComponent {
   styleUrls: ['./modal-classroom.component.scss']
 })
 export class ModalClassroomDialogComponent {
-  dataStuff = this.data.allData[0].mod1.frontend.zoom_link;
+  dataStuff = this.data
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: ModalClassroom) { }
 }
