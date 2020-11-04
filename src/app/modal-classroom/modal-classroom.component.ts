@@ -13,9 +13,9 @@ export class ModalClassroomComponent {
 
   constructor(public dialog: MatDialog) {
   }
-  openDialog(): void {
-    this.dialog.open(ModalClassroomDialogComponent);
-  }
+  // openDialog(config: object): void {
+  //   this.dialog.open(ModalClassroomDialogComponent, config);
+  // }
 }
 
 @Component({

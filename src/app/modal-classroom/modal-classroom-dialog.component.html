@@ -1,13 +1,13 @@
 
 <div style="width: 350px; height: 300px; display: flex; flex-direction: column;">
-  <h1 mat-dialog-title>Test</h1>
+  <h1 mat-dialog-title>{{data.title}}</h1>
   <hr>
   <div mat-dialog-content>
     <p>dataStuff.mod1.FE[2].summary</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta assumenda commodi, reprehenderit dolor expedita deserunt exercitationem perferendis voluptatum distinctio reiciendis, incidunt, voluptate impedit. Voluptatem harum necessitatibus, cumque provident optio sunt.</p>
+    <p>{{data.description}}</p>
   </div>
-  <a style="margin: 10px; text-align: center;" class="btn btn--grey" href="dataStuff.mod1.FE[2].location" target="_blank">Zoom Room</a>
-  <a style="margin: 10px; text-align: center;" class="btn btn--grey" href="https://frontend.turing.io/lessons" target="_blank">Lesson
+  <a style="margin: 10px; text-align: center;" class="btn btn--grey" href={{data.link}} target="_blank">Zoom Room</a>
+  <a style="margin: 10px; text-align: center;" class="btn btn--grey" href={{data.lesson}} target="_blank">Lesson
     Plans</a>
 </div>
 

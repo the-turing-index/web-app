@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { queueScheduler } from 'rxjs';
+import { MatDialog, MatDialogConfig, MatDialogModule } from '@angular/material/dialog';
 import { ModalClassroomDialogComponent } from '../modal-classroom/modal-classroom.component';
 // import { MatButtonModule } from '@angular/material/button';
 
@@ -21,12 +20,17 @@ export class MapComponent implements OnInit {
     this.onFetchData();
   }
 
-  openDialog(): void {
-    this.dialog.open(ModalClassroomDialogComponent, {
-      data: {
-        allData: this.loadedData
-      }
-    });
+  openDialog(title?: string, zoomLink?: string, description?: string, lessonLink?: string): void {
+    const dialogConfig = new MatDialogConfig();
+
+    dialogConfig.data = {
+      title: title,
+      link: zoomLink,
+      description: description,
+      lesson: lessonLink
+    }
+
+    this.dialog.open(ModalClassroomDialogComponent, dialogConfig);
   }
 
   onFetchData(): void {
