@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogConfig, MatDialogModule } from '@angular/material/dialog';
 import { ModalClassroomDialogComponent } from '../modal-classroom/modal-classroom.component';
 // import { MatButtonModule } from '@angular/material/button';
 
@@ -10,6 +10,7 @@ import { ModalClassroomDialogComponent } from '../modal-classroom/modal-classroo
 })
 export class MapComponent implements OnInit {
   loadedData = {};
+  mod1FrontEndButton = document.querySelector('#feM1');
 
   constructor(public dialog: MatDialog) {
 
@@ -19,12 +20,17 @@ export class MapComponent implements OnInit {
     this.onFetchData();
   }
 
-  openDialog(): void {
-    this.dialog.open(ModalClassroomDialogComponent, {
-      data: {
-        allData: this.loadedData
-      }
-    });
+  openDialog(title?: string, zoomLink?: string, description?: string, lessonLink?: string): void {
+    const dialogConfig = new MatDialogConfig();
+
+    dialogConfig.data = {
+      title: title,
+      link: zoomLink,
+      description: description,
+      lesson: lessonLink
+    }
+
+    this.dialog.open(ModalClassroomDialogComponent, dialogConfig);
   }
 
   onFetchData(): void {
@@ -32,12 +38,12 @@ export class MapComponent implements OnInit {
   }
 
   private fetchData(): void {
-    fetch('http://localhost:8000/calendars')
+    fetch('http://localhost:8000/api/v1/calendars')
     .then((response) => {
       return response.json();
     })
     .then((data) => {
-      this.loadedData = data.data.attributes;
+      this.loadedData = data;
       console.log(this.loadedData);
     });
   }
