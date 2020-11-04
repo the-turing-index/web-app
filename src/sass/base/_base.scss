@@ -12,11 +12,6 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-html {
-    max-width: 100%;
-    min-width: 100%;
-}
-
 ::selection {
     background-color: $blueprint-grey;
     color: $blueprint-white;
