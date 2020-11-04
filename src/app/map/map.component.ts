@@ -24,12 +24,11 @@ export class MapComponent implements OnInit {
     const dialogConfig = new MatDialogConfig();
 
     dialogConfig.data = {
-      title: title,
+      title: {title},
       link: zoomLink,
-      description: description,
+      description: {description},
       lesson: lessonLink
-    }
-
+    };
     this.dialog.open(ModalClassroomDialogComponent, dialogConfig);
   }
 
