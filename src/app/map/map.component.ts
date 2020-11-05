@@ -13,7 +13,6 @@ export class MapComponent implements OnInit {
   mod1FrontEndButton = document.querySelector('#feM1');
 
   constructor(public dialog: MatDialog) {
-
    }
 
   ngOnInit(): void {

@@ -12,8 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalClassroomComponent } from './modal-classroom/modal-classroom.component';
 import { MaterialModule } from '../material.module';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
-import { MAT_DIALOG_DEFAULT_OPTIONS, MatDialogConfig } from '@angular/material/dialog';
-import { ButtonsComponent } from './buttons/buttons.component';
+import { MAT_DIALOG_DEFAULT_OPTIONS, MatDialogModule, MatDialog } from '@angular/material/dialog';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,14 +22,14 @@ import { ButtonsComponent } from './buttons/buttons.component';
     AboutComponent,
     PageNotFoundComponent,
     ModalClassroomComponent,
-    ButtonsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    MatDialogModule,
   ],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
