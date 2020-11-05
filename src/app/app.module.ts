@@ -13,6 +13,7 @@ import { ModalClassroomComponent } from './modal-classroom/modal-classroom.compo
 import { MaterialModule } from '../material.module';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { MAT_DIALOG_DEFAULT_OPTIONS, MatDialogModule, MatDialog } from '@angular/material/dialog';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,7 @@ import { MAT_DIALOG_DEFAULT_OPTIONS, MatDialogModule, MatDialog } from '@angular
     HeadingComponent,
     AboutComponent,
     PageNotFoundComponent,
-    ModalClassroomComponent
+    ModalClassroomComponent,
   ],
   imports: [
     BrowserModule,

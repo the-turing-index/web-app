@@ -1,7 +1,169 @@
 @import '../../styles.scss';
-svg {
-    margin: 4vh 2vw;
+
+.map-container {
+    margin-top: 60px;
+    align-content: center;
+    width: 100vw;
 }
+
+svg {
+    display: block;
+    margin: auto;
+    max-width: 950px;
+    min-width: 950px;
+
+}
+
+.btn {
+    z-index: 100;
+    width: 120px;
+    height: 40px; //50px
+    text-align: center;
+    background-color: #caf0f8; 
+    font-size: 12px;
+    padding: 10px 0px;
+    font-weight: bolder;
+}
+
+.button-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.button-container .button-box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.button-container .button-box span {
+    position: absolute;
+    box-sizing: border-box;
+    border: 2px solid #ee6c4d;
+    border-radius: 10%;
+    animation: animate 4s linear infinite;
+    animation-delay: calc(-0.5s * var(--i));
+    // box-shadow: 0px 0px 7px 3px rgba(255, 255, 255 , .05);
+}
+
+// @keyframes animate
+// {
+//     0% {
+//         width: 150px;
+//         height: 35px;
+//     }
+//     50% {
+//         opacity: 1;
+//     }
+//     100% {
+//         width: 180px;
+//         height: 80px;
+//         opacity: 0;
+//     }
+// }
+// 247, 122, 59
+
+@keyframes animate {
+  0% {
+    height: 5px;
+    width: 60px;
+    box-shadow: 0 0 0 0rem rgba(rgb(250, 82, 10), 0.1),
+                0 0 0 .5rem rgba(rgb(250, 82, 10), 0.1),
+                0 0 0 1rem rgba(rgb(250, 82, 10), 0.1),
+                0 0 0 2.5rem rgba(rgb(250, 82, 10), 0.1);
+  }
+  100% {
+    height: 10px;
+    width: 100px;
+    box-shadow: 0 0 0 .5rem rgba(rgb(247, 122, 59), 0.1),
+                0 0 0 1rem rgba(rgb(247, 122, 59), 0.1),
+                0 0 0 2.5rem rgba(rgb(247, 122, 59), 0.1),
+                0 0 0 4rem rgba(rgb(247, 122, 59), 0);
+  }
+}
+
+.fe1 {
+    right: 365px;
+    bottom: 200px;
+}
+
+.be1 {
+    right: 167px;
+    bottom: 200px;
+}
+
+.fe2 {
+    left: 15px;
+    bottom: 200px;
+}
+
+.be2 {
+    left: 196px;
+    bottom: 200px;
+}
+
+.fe3 {
+    right: 365px;
+    top: 235px; 
+}
+
+.be3 {
+    right: 115px;
+    top: 235px; 
+}
+
+.mod4 {
+    left: 382px;
+    bottom: 200px;
+}
+
+.clark-hall {
+    left: 145px;
+    top: 235px; 
+}
+
+.kitchen {  
+    left: 195px;
+    top: 25px;
+}
+
+.map-btn {
+    color: coral;
+}
+
+.segment {
+    fill: black;
+}
+.segment-fill {
+  fill: black;
+  stroke: blue;
+  stroke-width: yellow;
+  font-size: 120px;
+    
+}
+
+
+.segment-fill:hover {
+  fill: black;
+//   stroke: var(--segment-fill-stroke-hover);
+}
+
+.segment-edge {
+  fill: black;
+//   stroke: var(--segment-edge-stroke);
+//   stroke-width: var(--segment-edge-stroke-width);
+}
+
+
+// ------------------
 
 .st0 {
     fill:none;
