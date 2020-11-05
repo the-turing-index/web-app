@@ -4,7 +4,7 @@
 			<div class="button-box">
 				<a 
 				class='btn btn--white'
-				(click)="this.openDialog(frontEndMod1.title, frontEndMod1.description, frontEndMod1.zoomLink,
+				(click)="this.openDialog(frontEndMod1.title, frontEndMod1.description, frontEndMod1.date, frontEndMod1.start, frontEndMod1.end, frontEndMod1.zoomLink,
 				frontEndMod1.lessonPlan)">
 				Mod 1 Front-End
 			</a>
@@ -21,7 +21,7 @@
 
 		<div class="button-container be1">
 			<div class="button-box">
-				<a class='btn btn--white' (click)="this.openDialog(backEndMod1.title, backEndMod1.description, backEndMod1.zoomLink,
+				<a class='btn btn--white' (click)="this.openDialog(backEndMod1.title, backEndMod1.description, backEndMod1.date, backEndMod1.start, backEndMod1.end, backEndMod1.zoomLink,
 				backEndMod1.lessonPlan)">Mod1 Back-End</a>
 				<span style="display:none; --i:1;"></span>
 				<span style="display:none; --i:2;"></span>
@@ -35,7 +35,7 @@
 
 		<div class="button-container fe2">
 			<div class="button-box">
-				<a class='btn btn--white' (click)="this.openDialog(frontEndMod2.title, frontEndMod2.description, frontEndMod2.zoomLink,
+				<a class='btn btn--white' (click)="this.openDialog(frontEndMod2.title, frontEndMod2.description, frontEndMod2.date, frontEndMod2.start, frontEndMod2.end, frontEndMod2.zoomLink,
 				frontEndMod2.lessonPlan)">Mod 2 Front-End</a>
 				<span style="--i:1;"></span>
 				<span style="--i:2;"></span>
@@ -49,7 +49,7 @@
 
 		<div class="button-container be2" id="beM2">
 			<div class="button-box">
-				<a class='btn btn--white'  (click)="this.openDialog(backEndMod2.title, backEndMod2.description, backEndMod2.zoomLink,
+				<a class='btn btn--white'  (click)="this.openDialog(backEndMod2.title, backEndMod2.description, backEndMod2.date, backEndMod2.start, backEndMod2.end, backEndMod2.zoomLink,
 				backEndMod2.lessonPlan)">Mod 2 Back-End</a>
 				<span style="--i:1;"></span>
 				<span style="--i:2;"></span>
@@ -63,7 +63,7 @@
 
 		<div class="button-container fe3" >
 			<div class="button-box">
-				<a class='btn btn--white'  (click)="this.openDialog(frontEndMod3.title, frontEndMod3.description, frontEndMod3.zoomLink,
+				<a class='btn btn--white'  (click)="this.openDialog(frontEndMod3.title, frontEndMod3.description, frontEndMod3.date, frontEndMod3.start, frontEndMod3.end, frontEndMod3.zoomLink,
 				frontEndMod3.lessonPlan)">Mod 3 Front-End</a>
 				<span style="--i:1;"></span>
 				<span style="--i:2;"></span>
@@ -77,7 +77,7 @@
 
 		<div class="button-container be3" >
 			<div class="button-box">
-				<a class='btn btn--white' (click)="this.openDialog(backEndMod3.title, backEndMod3.description, backEndMod3.zoomLink, backEndMod3.lessonPlan)">Mod 3 Back-End</a>
+				<a class='btn btn--white' (click)="this.openDialog(backEndMod3.title, backEndMod3.description, backEndMod3.date, backEndMod3.start, backEndMod3.end, backEndMod3.zoomLink, backEndMod3.lessonPlan)">Mod 3 Back-End</a>
 				<span style="display:none; --i:1;"></span>
 				<span style="display:none; --i:2;"></span>
 				<span style="display:none; --i:3;"></span>
@@ -90,7 +90,7 @@
 
 		<div class="button-container mod4" id="md4">
 			<div class="button-box">
-				<a class='btn btn--white' (click)="this.openDialog(module4.title, module4.description, module4.zoomLink,
+				<a class='btn btn--white' (click)="this.openDialog(module4.title, module4.description, module4.date, module4.start, module4.end, module4.zoomLink,
 				module4.lessonPlan)">Mod 4</a>
 				<span style="display:none; --i:1;"></span>
 				<span style="display:none; --i:2;"></span>
@@ -104,7 +104,7 @@
 
 		<div class="button-container clark-hall" id="clarkHall">
 			<div class="button-box">
-				<a class='btn btn--white' (click)="this.openDialog(community.title, community.description, community.zoomLink,
+				<a class='btn btn--white' (click)="this.openDialog(community.title, community.description, community.date, community.start, community.end, community.zoomLink,
 				community.lessonPlan)">Clark Hall</a>
 				<span style="display:none; --i:1;"></span>
 				<span style="display:none; --i:2;"></span>
@@ -118,7 +118,7 @@
 
 		<div class="button-container kitchen" id="kitchen">
 			<div class="button-box">
-				<a class='btn btn--white'  (click)="this.openDialog(kitchen.title, kitchen.description, kitchen.zoomLink,
+				<a class='btn btn--white'  (click)="this.openDialog(kitchen.title, kitchen.description, kitchen.date, kitchen.start, kitchen.end, kitchen.zoomLink,
 				kitchen.lessonPlan)">The Kitchen</a>
 				<span style="--i:1;"></span>
 				<span style="--i:2;"></span>

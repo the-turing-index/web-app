@@ -5,7 +5,7 @@ import { MapComponent } from './map/map.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/map', pathMatch: 'full' },
+  { path: '', redirectTo: '', pathMatch: 'full' },
   { path: 'map', component: MapComponent },
   { path: 'about', component: AboutComponent },
   { path: '**', component: PageNotFoundComponent }
