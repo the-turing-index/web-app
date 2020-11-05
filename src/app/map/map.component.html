@@ -2,7 +2,12 @@
 	<div class="map-parent">
 		<div class="button-container fe1">
 			<div class="button-box">
-				<a class='btn btn--white' (click)="this.openDialog()"> Mod 1 Front-End</a>
+				<a 
+				class='btn btn--white'
+				(click)="this.openDialog(frontEndMod1.title, frontEndMod1.description, frontEndMod1.zoomLink,
+				frontEndMod1.lessonPlan)">
+				Mod 1 Front-End
+			</a>
 				<span style="--i:1;"></span>
 				<span style="--i:2;"></span>
 				<span style="--i:3;"></span>
@@ -14,9 +19,10 @@
 			</div>
 		</div>
 
-		<div class="button-container be1" id="beM1">
+		<div class="button-container be1">
 			<div class="button-box">
-				<a class='btn btn--white' (click)="this.openDialog()">Mod1 Back-End</a>
+				<a class='btn btn--white' (click)="this.openDialog(backEndMod1.title, backEndMod1.description, backEndMod1.zoomLink,
+				backEndMod1.lessonPlan)">Mod1 Back-End</a>
 				<span style="display:none; --i:1;"></span>
 				<span style="display:none; --i:2;"></span>
 				<span style="display:none; --i:3;"></span>
@@ -24,13 +30,13 @@
 				<span style="display:none; --i:5;"></span>
 				<span style="display:none; --i:6;"></span>
 				<span style="display:none; --i:7;"></span>
-
 			</div>
 		</div>
 
-		<div class="button-container fe2" id="feM2">
+		<div class="button-container fe2">
 			<div class="button-box">
-				<a class='btn btn--white' (click)="this.openDialog()">Mod 2 Front-End</a>
+				<a class='btn btn--white' (click)="this.openDialog(frontEndMod2.title, frontEndMod2.description, frontEndMod2.zoomLink,
+				frontEndMod2.lessonPlan)">Mod 2 Front-End</a>
 				<span style="--i:1;"></span>
 				<span style="--i:2;"></span>
 				<span style="--i:3;"></span>
@@ -38,13 +44,13 @@
 				<span style="--i:5;"></span>
 				<span style="--i:6;"></span>
 				<span style="--i:7;"></span>
-
 			</div>
 		</div>
 
 		<div class="button-container be2" id="beM2">
 			<div class="button-box">
-				<a class='btn btn--white'  (click)="this.openDialog()">Mod 2 Back-End</a>
+				<a class='btn btn--white'  (click)="this.openDialog(backEndMod2.title, backEndMod2.description, backEndMod2.zoomLink,
+				backEndMod2.lessonPlan)">Mod 2 Back-End</a>
 				<span style="--i:1;"></span>
 				<span style="--i:2;"></span>
 				<span style="--i:3;"></span>
@@ -52,13 +58,26 @@
 				<span style="--i:5;"></span>
 				<span style="--i:6;"></span>
 				<span style="--i:7;"></span>
-
 			</div>
-		</div>
+	</div>
 
 		<div class="button-container fe3" >
 			<div class="button-box">
-				<a class='btn btn--white'  (click)="this.openDialog()">Mod 3 Front-End</a>
+				<a class='btn btn--white'  (click)="this.openDialog(frontEndMod3.title, frontEndMod3.description, frontEndMod3.zoomLink,
+				frontEndMod3.lessonPlan)">Mod 3 Front-End</a>
+				<span style="--i:1;"></span>
+				<span style="--i:2;"></span>
+				<span style="--i:3;"></span>
+				<span style="--i:4;"></span>
+				<span style="--i:5;"></span>
+				<span style="--i:6;"></span>
+				<span style="--i:7;"></span>
+			</div>
+		</div>
+
+		<div class="button-container be3" >
+			<div class="button-box">
+				<a class='btn btn--white' (click)="this.openDialog(backEndMod3.title, backEndMod3.description, backEndMod3.zoomLink, backEndMod3.lessonPlan)">Mod 3 Back-End</a>
 				<span style="display:none; --i:1;"></span>
 				<span style="display:none; --i:2;"></span>
 				<span style="display:none; --i:3;"></span>
@@ -66,26 +85,13 @@
 				<span style="display:none; --i:5;"></span>
 				<span style="display:none; --i:6;"></span>
 				<span style="display:none; --i:7;"></span>
-
-			</div>
-		</div>
-
-		<div class="button-container be3">
-			<div class="button-box">
-				<a class='btn btn--white'  (click)="this.openDialog()">Mod 3 Back-End</a>
-				<span style="--i:1;"></span>
-				<span style="--i:2;"></span>
-				<span style="--i:3;"></span>
-				<span style="--i:4;"></span>
-				<span style="--i:5;"></span>
-				<span style="--i:6;"></span>
-				<span style="--i:7;"></span>
 			</div>
 		</div>
 
 		<div class="button-container mod4" id="md4">
 			<div class="button-box">
-				<a class='btn btn--white' (click)="this.openDialog()">Mod 4</a>
+				<a class='btn btn--white' (click)="this.openDialog(module4.title, module4.description, module4.zoomLink,
+				module4.lessonPlan)">Mod 4</a>
 				<span style="display:none; --i:1;"></span>
 				<span style="display:none; --i:2;"></span>
 				<span style="display:none; --i:3;"></span>
@@ -98,7 +104,8 @@
 
 		<div class="button-container clark-hall" id="clarkHall">
 			<div class="button-box">
-				<a class='btn btn--white' (click)="this.openDialog()">Clark Hall</a>
+				<a class='btn btn--white' (click)="this.openDialog(community.title, community.description, community.zoomLink,
+				community.lessonPlan)">Clark Hall</a>
 				<span style="display:none; --i:1;"></span>
 				<span style="display:none; --i:2;"></span>
 				<span style="display:none; --i:3;"></span>
@@ -111,7 +118,8 @@
 
 		<div class="button-container kitchen" id="kitchen">
 			<div class="button-box">
-				<a class='btn btn--white'  (click)="this.openDialog()">The Kitchen</a>
+				<a class='btn btn--white'  (click)="this.openDialog(kitchen.title, kitchen.description, kitchen.zoomLink,
+				kitchen.lessonPlan)">The Kitchen</a>
 				<span style="--i:1;"></span>
 				<span style="--i:2;"></span>
 				<span style="--i:3;"></span>
@@ -119,7 +127,6 @@
 				<span style="--i:5;"></span>
 				<span style="--i:6;"></span>
 				<span style="--i:7;"></span>
-
 			</div>
 		</div>
 
@@ -128,18 +135,6 @@
 
 		<g id="Layer_5">
 			<rect x="33" y="90.5" class="st0" width="154.4" height="17.4"/>
-			
-			<text transform="matrix(1 0 0 1 39.7101 105.4595)" class="st1 st2">
-				<a mat-button style="color:coral" class='map-btn' (click)="this.openDialog()">Mod 1 FrontEnd</a>
-				</text>
-		<!-- 	
-			<defs>
-				<g class="segment" transform="rotate(72)">
-					<path class="segment-fill" d="M0,0 v-200 a40,40 0 0,0 -62,10 z" />
-					<path class="segment-edge" d="M0,-200 a40,40 0 0,0 -62,10" />
-				</g>
-			</defs>
-			-->
 			<rect x="274.3" y="90.5" class="st0" width="154.4" height="17.4"/>
 			<text transform="matrix(1 0 0 1 284.2353 105.4595)" class="st1 st2"></text>
 			<rect x="488.5" y="90.5" class="st0" width="154.4" height="17.4"/>
@@ -160,35 +155,6 @@
 			<text transform="matrix(1 0 0 1 673.7614 563.6611)" class="st1 st2"></text>
 			<rect x="355.7" y="331.6" class="st0" width="308.9" height="31"/>
 			<text transform="matrix(1 0 0 1 400.8616 357.839)" class="st1 st3">The Basement</text>
-		</g>
-		<g id="Layer_4">
-			
-				<!-- <image style="overflow:visible;" width="225" height="225" xlink:href="img/turingLogo.png"  transform="matrix(0.1868 0 0 0.1901 829.5187 5.3779)">
-			</image>
-			
-				<image style="overflow:visible;" width="225" height="225" xlink:href="img/turingLogo.png"  transform="matrix(0.1868 0 0 0.1901 199.3993 10.6827)">
-			</image>
-			
-				<image style="overflow:visible;" width="225" height="225" xlink:href="img/turingLogo.png"  transform="matrix(0.1868 0 0 0.1901 404.3591 5.8793)">
-			</image>
-			
-				<image style="overflow:visible;" width="225" height="225" xlink:href="img/turingLogo.png"  transform="matrix(0.1868 0 0 0.1901 616.9389 6.4268)">
-			</image>
-			
-				<image style="overflow:visible;" width="225" height="225" xlink:href="img/turingLogo.png"  transform="matrix(0.1868 0 0 0.1901 1044.271 5.3779)">
-			</image>
-			
-				<image style="overflow:visible;" width="225" height="225" xlink:href="img/turingLogo.png"  transform="matrix(0.1868 0 0 0.1901 4.3083 650.0555)">
-			</image>
-			
-				<image style="overflow:visible;" width="225" height="225" xlink:href="img/turingLogo.png"  transform="matrix(0.1868 0 0 0.1901 137.9577 650.0555)">
-			</image>
-			
-				<image style="overflow:visible;" width="225" height="225" xlink:href="img/turingLogo.png"  transform="matrix(0.1868 0 0 0.1901 270.6491 650.0555)">
-			</image>
-			
-				<image style="overflow:visible;" width="225" height="225" xlink:href="img/turingLogo.png"  transform="matrix(0.1868 0 0 0.1901 448.0197 650.0555)">
-			</image> -->
 		</g>
 		<g id="Layer_3">
 			<line class="st4" x1="0" y1="174.7" x2="896" y2="174.7"/>
@@ -274,8 +240,3 @@
 		</svg>
 	</div>
 </div>
-
-
-<!-- <app-button>
-	<a style="color:coral" class='map-btn' (click)="this.openDialog()">Mod 1 FrontEnd</a>
-</app-button> -->

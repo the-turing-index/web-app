@@ -13,9 +13,9 @@ export class ModalClassroomComponent {
 
   constructor(public dialog: MatDialog) {
   }
-  // openDialog(config: object): void {
-  //   this.dialog.open(ModalClassroomDialogComponent, config);
-  // }
+  openDialog(): void {
+    this.dialog.open(ModalClassroomDialogComponent);
+  }
 }
 
 @Component({
@@ -24,7 +24,6 @@ export class ModalClassroomComponent {
   styleUrls: ['./modal-classroom.component.scss']
 })
 export class ModalClassroomDialogComponent {
-  dataStuff = this.data;
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: ModalClassroom) { }
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any) { }
 }
