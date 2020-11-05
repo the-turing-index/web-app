@@ -19,9 +19,7 @@ export class MapComponent implements OnInit {
   module4 = module4;
   community = community;
   kitchen = kitchen;
-  
-  constructor(public dialog: MatDialog) {
-   }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.onFetchData();
