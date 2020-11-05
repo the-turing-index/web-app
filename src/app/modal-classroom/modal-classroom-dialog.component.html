@@ -1,13 +1,13 @@
 
-<div style="width: 350px; height: 300px; display: flex; flex-direction: column; text-align: center;">
+<div style="width: 350px; height: 350px; display: flex; flex-direction: column; text-align: center;">
   <h1 mat-dialog-title>{{data.title}}</h1>
   <hr>
   <div mat-dialog-content>
+    <p><b>{{data.date}} | {{data.start}} - {{data.end}}</b></p>
     <p>{{data.description}}</p>
-    <p></p>
   </div>
-  <a style="margin: 10px; text-align: center;" class="btn btn--grey" href={{data.zoomLink}} target="_blank">Zoom Room</a>
-  <a style="margin: 10px; text-align: center;" class="btn btn--grey" href={{data.lessonPlan}} target="_blank">Lesson
+  <a id="zoom" style="margin: 10px; text-align: center;" class="btn btn--grey" href={{data.zoomLink}} target="_blank">Zoom Room</a>
+  <a id="lesson" style="margin: 10px; text-align: center;" class="btn btn--grey" href={{data.lessonPlan}} target="_blank">Lesson
     Plans</a>
 </div>
 
