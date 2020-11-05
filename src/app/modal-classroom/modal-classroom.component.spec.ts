@@ -38,19 +38,4 @@ describe ('Modal Classroom Component', () => {
   it('should be created', (async () => {
     expect(component).toBeTruthy();
   }));
-
-  it('should NOT display the modal', () => {
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('div')).toBeNull();
-
-    fixture.detectChanges();
-
-    expect(compiled.querySelector('button').textContent).toBe('Open dialog');
-  });
-
-  it('should display the modal on click', () => {
-    const compiled = fixture.debugElement.nativeElement;
-    fixture.detectChanges();
-    expect(compiled.querySelector('button').textContent).toBe('Open dialog');
-  });
 });
