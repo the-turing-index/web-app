@@ -56,7 +56,7 @@ export const community = {
 
 export const kitchen = {
   title: 'Lets get Social',
-  description: 'Need a break, need someone to bounce your crazy ideas off. Come to the kithen and connect with fellow students, and staff. No Idea is too crazy here.',
+  description: 'Need a break? Need someone to bounce ideas off and collaborate with? Come to the kitchen to connect with fellow students and staff!',
   zoomLink: 'https://turingschool.zoom.us/j/96910748883',
   lessonPlan: 'https://turing.io/'
 };
