@@ -40,7 +40,15 @@ export class MapComponent implements OnInit {
     });
   }
 
-  openDialog(title?: string, description?: string, date?: string, start?: string,  end?: string, zoomLink?: string, lessonPlan?: string): void {
+  openDialog(
+    title?: string, 
+    description?: string, 
+    date?: string, 
+    start?: string,  
+    end?: string, 
+    zoomLink?: string, 
+    lessonPlan?: string
+    ): void {
     const dialogConfig = new MatDialogConfig();
 
     dialogConfig.data = {

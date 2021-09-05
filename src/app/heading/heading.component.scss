@@ -4,27 +4,33 @@
     padding: 0;
     margin: 0 0 2vh 0;
     background-color: $blueprint-white;
-    height: 60px;
+    height: 70px;
     width: 100vw;
     position: inline-block;
 
     &__logo-box {
         position: absolute;
-        top: 1vh;
-        left: 1vw;
+        left: -20px;
     }
 
     &__logo {
         height: 4rem;
     }
     
-    &__text-box {
-        text-align: center;
+    &__title-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title {
+        position: absolute;
+        top: -80px;
+        width: 25em;
     }
 
     &__button-box {
         position: relative;
-        top: 14px;
+        top: 75px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
